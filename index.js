@@ -18,9 +18,9 @@ function createGitlabWrapper({ baseUri, privateToken } = {}) {
     .then(() => {
       if (method === 'GET') {
         option.private_token = privateToken
-        return fetch(`${BASE_URI}${path}?` + qs.stringify(option))
+        return fetch(`${baseUri}${path}?` + qs.stringify(option))
       } else {
-        return fetch(`${BASE_URI}${path}?private_token=${PRIVATE_TOKEN}`, {
+        return fetch(`${baseUri}${path}?private_token=${privateToken}`, {
           body: JSON.stringify(option),
           method,
           headers: {
