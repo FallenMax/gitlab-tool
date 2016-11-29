@@ -1,0 +1,11 @@
+{
+  "name": "gitlab-tool",
+  "version": "0.0.1",
+  "description": "A thin wrapper of Gitlab API",
+  "main": "index.js",
+  "author": "FallenMax",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  }
+}
