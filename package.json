@@ -1,6 +1,6 @@
 {
   "name": "gitlab-tool",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A thin wrapper of Gitlab API",
   "main": "index.js",
   "author": "FallenMax",

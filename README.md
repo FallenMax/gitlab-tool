@@ -11,7 +11,8 @@ A (really) thin [Gitlab API](https://docs.gitlab.com/ee/api/README.html) wrapper
 ```javascript
 const gitlab = require('gitlab-tool')({
   baseUri: 'http://gitlab.example.com/api/v3',  // Gitlab API uri
-  privateToken: 'MY_PRIVATE_TOKEN'  // Profile Settings -> Account -> Private Token
+  privateToken: 'MY_PRIVATE_TOKEN',  // Profile Settings -> Account -> Private Token
+  debug: false           // need some debug log?
 })
 
 const PROJECT_ID = 42  // list all projects: https://docs.gitlab.com/ee/api/projects.html#list-all-projects
